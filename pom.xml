@@ -45,7 +45,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>4.3.1.RELEASE</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>4.3.1.RELEASE</version>
         </dependency>
 
 
@@ -67,15 +73,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <webXml>web\WEB-INF\web.xml</webXml>
-                    <webappDirectory>web</webappDirectory>
+                    <webXml>webapp\WEB-INF\web.xml</webXml>
+                    <webappDirectory>webapp</webappDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 
-
-
-    
 </project>
