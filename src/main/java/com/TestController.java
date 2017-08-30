@@ -15,9 +15,8 @@ public class TestController {
 
 
 
-        modelAndView.addObject("name", "Oleg");
+      return   modelAndView.addObject("name", "Oleg");
 
-        return  modelAndView;
 
 
 
