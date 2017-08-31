@@ -7,7 +7,7 @@
     <groupId>groupId</groupId>
     <artifactId>socialnet</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>war</packaging>
 
     <dependencies>
 
@@ -69,14 +69,14 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-         <!--   <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <webXml>webapp\WEB-INF\web.xml</webXml>
-                    <webappDirectory>webapp</webappDirectory>
-                </configuration>
-            </plugin> -->
+            <!--   <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-war-plugin</artifactId>
+                   <configuration>
+                       <webXml>webapp\WEB-INF\web.xml</webXml>
+                       <webappDirectory>webapp</webappDirectory>
+                   </configuration>
+               </plugin> -->
         </plugins>
     </build>
 
