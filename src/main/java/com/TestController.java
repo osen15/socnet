@@ -17,8 +17,8 @@ public class TestController {
     // }
 
     @RequestMapping(value = "/index")
-    public ModelAndView index() {
-        ModelAndView modelAndView = new ModelAndView("index");
+    public ModelAndView indexTest() {
+        ModelAndView modelAndView = new ModelAndView("index.vm");
         return modelAndView.addObject("user", "Oleg");
     }
 
