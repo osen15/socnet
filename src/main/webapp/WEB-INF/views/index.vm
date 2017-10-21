@@ -13,32 +13,33 @@
 </header>
 
 
-<button name="check" onclick="testajax()">
+    <button onclick="testajax()">check</button>
 
-    <!--logic-->
-    <!--html-->
 
-    <script>
-        //javascript
+<!--logic-->
+<!--html-->
 
-        function testajax() {
+<script>
+    //javascript
 
-            $.ajax({
-                url: '/test_ajax',
-                data: ({
-                    email: 'testEmail',
-                    name: null
-                }),
+    function testajax() {
 
-                success: function (data) {
-                    alert('success');
-                },
-                error: function (xhr) {
-                    alert('error');
-                }
-            });
-        };
+        $.ajax({
+            url: '/test_ajax',
+            data: ({
+                email: 'testEmail',
+                name: null
+            }),
 
-    </script>
+            success: function (data) {
+                alert('success');
+            },
+            error: function (xhr) {
+                alert('error');
+            }
+        });
+    };
+
+</script>
 </body>
 </html>
