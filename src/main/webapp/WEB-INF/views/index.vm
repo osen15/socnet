@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title></title>
+    <title> Demo </title>
 </head>
 
 
 <body>
+<header>
 
-${user}!
+    Test
+
+</header>
 
 
+<button name="check" onclick="testajax()">
 
-<!--<button name="test" onclick="testajax()"/>
+    <!--logic-->
+    <!--html-->
 
-<!--logic-->
-<!--html-->
+    <script>
+        //javascript
 
-<!--<script>
-    //javascript
+        function testajax() {
 
-    function testajax() {
+            $.ajax({
+                url: '/test_ajax',
+                data: ({
+                    email: 'testEmail',
+                    name: null
+                }),
 
-        $.ajax({
-            url: '/test_ajax',
-            data: ({
-                email: 'testEmail',
-                name: 'testName'
-            }),
-            success: function (data) {
-                alert('success');
-            },
-            error: function (xhr){
-            alert('error');
-            }
-        });
-    };
+                success: function (data) {
+                    alert('success');
+                },
+                error: function (xhr) {
+                    alert('error');
+                }
+            });
+        };
 
-</script> -->
+    </script>
 </body>
 </html>

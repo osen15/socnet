@@ -16,16 +16,16 @@ public class TestController {
     //     return   modelAndView.addObject("name", "Oleg");
     // }
 
-    @RequestMapping(value = "/index")
+    @RequestMapping(value = "/")
     public ModelAndView indexTest() {
         ModelAndView modelAndView = new ModelAndView("index.vm");
-        return modelAndView.addObject("user", "Oleg");
+        return modelAndView;
     }
 
   /*  @RequestMapping(value = "/test_ajax")
     public String processAjax(@RequestParam String email, @RequestParam String name) {
         String response;
-        if (vaiidateemail(email))
+        if (validateEmail(email))
             response = "{\"response\" : \"success\"}";
         else response = "{\"response\" : \"failed\"}";
 
@@ -38,10 +38,10 @@ public class TestController {
     return  new ResponseEntity<String>(response, new  HttpHeaders(), HttpStatus.OK);
     } **/
 
-  /*  @RequestMapping(value = "/test_ajax")
+   @RequestMapping(value = "/test_ajax")
     public ResponseEntity<String> processAjaxBetterOption(@RequestParam String email, @RequestParam String name) {
         ResponseEntity<String> response;
-        if (vaiidateemail(email))
+        if (validateEmail(email) && name != null)
             response = new ResponseEntity<>(HttpStatus.OK);
         else response = new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 
@@ -49,10 +49,10 @@ public class TestController {
     }
 
 
-    private boolean vaiidateemail(String email) {
+    private boolean validateEmail(String email) {
         return !email.contains("g") || !email.contains("gmail");
 
-    } **/
+    }
 
 
 }
